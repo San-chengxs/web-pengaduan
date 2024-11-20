@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=DynaPuff:wght@400..700&family=Pacifico&family=Rubik+Wet+Paint&display=swap');
+
+body {
+    font-family: 'popins', sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(to bottom, #00aaff, #005f99); /* Gradasi biru */
+    overflow: hidden;
+}
+
+.header .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url(../image/wave.png);
+    background-size: 1000px 100px;
+}
+
+.header .wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    bottom: 0;
+}
+
+.header .wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    bottom: 10px;
+}
+
+.header .wave3 {
+    animation: animate3 20s linear infinite;
+    z-index: 997;
+    opacity: 0.3;
+    bottom: -15px;
+}
+
+.header .wave4 {
+    animation: animate2 15s linear infinite;
+    z-index: 996;
+    opacity: 0.7;
+    bottom: 15px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -500px; /* Gelombang lebih cepat */
+    }
+}
+
+.italic {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.medium {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.semi-bold {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-purple {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #005f99 !important; /* Biru */
+    width: 100%;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-outline-purple {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+.navbar .container-fluid #navbarNav .navbar-nav .nav-item .btn-outline-purple:hover {
+    color: #005f99; /* Biru */
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+.text-center h2 {
+    font-size: 26px;
+}
+
+.text-center p {
+    font-size: 16px;
+}
+
+.row .col {
+    z-index: 1001;
+}
+
+@media screen and (max-width: 576px) {
+    .row .col .content-top {
+        padding: 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #005f99; /* Biru */
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .row .col .content-top {
+        padding: 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #005f99; /* Biru */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row .col .content-top {
+        padding: 32px 20px;
+        background: #fff;
+        margin-top: -160px;
+        border-color: #005f99; /* Biru */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .row .col .content-bottom {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .row .col .content-top {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row .col .content-top {
+        margin-top: 32 px;
+    }
+}
+
+.row .col .content {
+    padding: 32px 20px;
+    background: #fff;
+    border-color: #005f99; /* Biru */
+}
+
+@media screen and (max-width: 992px) {
+    .row .col .content {
+        padding: 32px 20px;
+        background: #fff;
+        border-color: #005f99; /* Biru */
+        margin-top: -160px;
+    }
+}
+
+.row .col .content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #005f99; /* Biru */
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Gaya untuk Form */
+.form-control {
+    border: 1px solid #005f99; /* Biru */
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #003f66; /* Biru lebih gelap saat fokus */
+    box-shadow: 0 0 5px rgba(0, 95, 153, 0.5);
+}
+
+/* Gaya untuk Button */
+.btn-custom {
+    background-color: #005f99; /* Biru */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #003f66; /* Biru lebih gelap saat hover */
+}
+
+/* Gaya untuk Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
